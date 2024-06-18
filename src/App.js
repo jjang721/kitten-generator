@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState} from 'react';
+import Cat from './components/cat.js';
 
 function App() {
+
+  const [cats, setCats] = useState([]);
+
+  const addCat = () => {
+    setCats([...cats, <Cat key={cats.length} />]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <button onClick={addCat}>Add kitty</button>
+    <div className="cat-container">
+      {cats}
     </div>
+  </div>
   );
 }
 
