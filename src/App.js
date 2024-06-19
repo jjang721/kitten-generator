@@ -7,12 +7,12 @@ function App() {
   const [cats, setCats] = useState([]);
 
   const addCat = () => {
-    setCats([...cats, <Cat key={cats.length} />]);
+    setCats([...cats, <Cat key={cats.length}/>]);
   };
 
   return (
     <div className="App">
-    <button onClick={addCat}>Add kitty</button>
+    <button onClick={addCat} className='button-56' role='button'>Add kitty</button>
     <div className="cat-container">
       {cats}
     </div>
