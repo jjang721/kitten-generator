@@ -3,3 +3,7 @@
     height: auto;
     margin: 10px;
   }
+
+  .cat:hover{
+    opacity:50;
+  }
