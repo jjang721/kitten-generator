@@ -72,10 +72,12 @@
 .button-56:active {
   background-color: #ffdeda;
   outline: 0;
+  opacity: 100;
 }
 
 .button-56:hover {
   outline: 0;
+  transition: background-color 5s;
 }
 
 @media (min-width: 768px) {
