@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-    <button onClick={addCat} className='button-56' role='button'>Add kitty</button>
+    <button onClick={addCat} className='button' role='button'>Add kitty</button>
     <div className="cat-container">
       {cats}
     </div>
